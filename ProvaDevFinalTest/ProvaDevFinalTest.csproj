@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0CF48702-21CB-45C9-8946-871CDA2E17B8}</ProjectGuid>
+    <ProjectGuid>{9A33E922-D9D0-45BF-9B49-B24C2B436083}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BhaskaraTest</RootNamespace>
-    <AssemblyName>BhaskaraTest</AssemblyName>
+    <RootNamespace>ProvaDevFinalTest</RootNamespace>
+    <AssemblyName>ProvaDevFinalTest</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
