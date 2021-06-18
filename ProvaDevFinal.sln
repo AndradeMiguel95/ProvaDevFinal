@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.31112.23
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProvaDevFinal", "ProvaDevFinal\ProvaDevFinal.csproj", "{C1107143-6718-41A9-8C81-9FA2956B2F76}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaskaraTest", "BaskaraTest\BaskaraTest.csproj", "{2FF72275-543B-4411-889D-2DE03E6E60B7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProvaDevFinalTest", "BhaskaraTest\ProvaDevFinalTest.csproj", "{0CF48702-21CB-45C9-8946-871CDA2E17B8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{C1107143-6718-41A9-8C81-9FA2956B2F76}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C1107143-6718-41A9-8C81-9FA2956B2F76}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C1107143-6718-41A9-8C81-9FA2956B2F76}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2FF72275-543B-4411-889D-2DE03E6E60B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2FF72275-543B-4411-889D-2DE03E6E60B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2FF72275-543B-4411-889D-2DE03E6E60B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2FF72275-543B-4411-889D-2DE03E6E60B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CF48702-21CB-45C9-8946-871CDA2E17B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CF48702-21CB-45C9-8946-871CDA2E17B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CF48702-21CB-45C9-8946-871CDA2E17B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CF48702-21CB-45C9-8946-871CDA2E17B8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

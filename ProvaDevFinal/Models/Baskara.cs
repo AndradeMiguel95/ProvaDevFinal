@@ -5,9 +5,9 @@ using System.Text;
 
 namespace ProvaDevFinal.Models
 {
-    class Baskara
+    public class Baskara
     {
-        static void Main(string[] args)
+        public void Main(string[] args)
         {
             bool convercao;
             double a, b, c;
@@ -25,11 +25,15 @@ namespace ProvaDevFinal.Models
 
         }
 
-        static double Bhaskara1(double a1, double b1, double c1)
+        public double Bhaskara1(double a1, double b1, double c1)
         {
-            double delta = Math.Pow(b1, 2) - (4 * a1 * c1);
-            double x1 = (((b1 * (-1)) + delta) / (2 * a1)); 
-            double x2 = (((b1 * (-1)) - delta) / (2 * a1));
+            double delta = (b1 * b1) - (4 * a1 * c1);
+            double partA = a1 * 2;
+            double partB = b1 * -1;
+            double partC = partB + delta;
+            double partC2 = partB - delta;
+            double x1 = (partC / partA); 
+            double x2 = (partC2 / partA);
 
             if (delta > 0)
             {

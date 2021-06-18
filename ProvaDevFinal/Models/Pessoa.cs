@@ -10,25 +10,26 @@ namespace ProvaDevFinal.Models
     {
         static void Main(string[] args)
         {
-            string nome;
-            int idade;
+            bool nome;
+            double idade;
 
+            nome = Double.TryParse(Console.ReadLine(), out idade);
 
             CalculaNumeroPrimo(idade);
         }
 
-        static string CalculaNumeroPrimo(int idade)
+        static string CalculaNumeroPrimo(double idade)
         {
             string resultado;
             try
             {
-                for (int i = 2; i < idade; i++)
+                for (double i = 2; i < idade; i++)
                 {
-                    int resto = idade % i;
+                    double resto = idade % i;
                     if (resto == 0)
                     {
-                        resultado = idade + " não é um número primo";
                         i = idade + 1;
+                        resultado = idade + " não é um número primo";
                     }
                     else
                     {
@@ -42,7 +43,7 @@ namespace ProvaDevFinal.Models
                 Console.WriteLine(e);
             }
 
-            return resultado;
+            return "";
             
         }
     }

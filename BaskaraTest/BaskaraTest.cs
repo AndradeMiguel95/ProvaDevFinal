@@ -1,19 +1,21 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System; 
 using ProvaDevFinal.Models;
 
 namespace BaskaraTest
 {
     [TestClass]
-    public class UnitTest1
+    public class BaskaraTest
     {
+        [DataRow(3, 5, 8)]
+        [DataRow(2, 7, 9)]
+        [DataRow(10, 5, 15)]
         [TestMethod]
         public void TestMethod1()
         {
             //Arrange
-            double a, b, c;
-            Baskara baskara = new Baskara();
-            Baskara test1 = new Baskara();
-            Larissa.Id = Convert.ToInt32(TestContext.DataRow["id"]);
+            double resultado;
+            Baskara BaskaraTest = new Baskara();
 
             Mock<IVerificaProf> mock = new Mock<IVerificaProf>();
             mock.Setup(m => m.VerificaId(Larissa)).Returns("");
