@@ -6,34 +6,34 @@ using System.Text;
 
 namespace ProvaDevFinal.Models
 {
-    public class Pessoa
+    public interface IVerificaIdade
     {
-        static void Main(string[] args)
+        string VerificaIdade(Pessoa p);
+    }
+
+    public class Pessoa : IVerificaIdade
+    {
+        public string Resultado { get; set; }
+        public int Idade { get; set; }
+
+        public string VerificaIdade(Pessoa p)
         {
-            bool nome;
-            double idade;
+            
 
-            nome = Double.TryParse(Console.ReadLine(), out idade);
-
-            CalculaNumeroPrimo(idade);
-        }
-
-        static string CalculaNumeroPrimo(double idade)
-        {
-            string resultado;
+            Resultado = p.Idade.ToString();
             try
             {
-                for (double i = 2; i < idade; i++)
+                for (int i = 2; i < p.Idade; i++)
                 {
-                    double resto = idade % i;
+                    int resto = p.Idade % i;
                     if (resto == 0)
                     {
-                        i = idade + 1;
-                        resultado = idade + " não é um número primo";
+                        p.Resultado = p.Idade + " não é um número primo";
+                        i = p.Idade;
                     }
                     else
                     {
-                        resultado = idade + " é um número primo";
+                        p.Resultado = p.Idade + " é um número primo";
                     }
                 }
             }
@@ -42,9 +42,7 @@ namespace ProvaDevFinal.Models
                 Console.WriteLine("Erro ao Verificar nº primo");
                 Console.WriteLine(e);
             }
-
-            return "";
-            
+            return p.Resultado;
         }
     }
 }
